@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - VersaQuest</title>
+    <link rel="icon" href="logo/VersaQuest-Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav Bar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo/VersaQuest-Logo-BG.png" width="300" height="65" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link hovers" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hovers" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown border-active active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Others</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item light-font" href="learn.html">Learn</a>
+                        <a class="dropdown-item light-font dropdown-active" href="shop.html">Shop</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item light-font" href="contact.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item credential">
+                    <a class="nav-link fillup" href="login.html">Login</a>
+                </li>
+                <li class="nav-item credential">
+                    <a class="nav-link fillup" href="signup.html">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Nav Bar End -->
+    <!-- Merch Selection Start -->
+    <h2 id="merch-title">MERCH</h2>
+    <div class="row versaquest-row" id="merch">
+        <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-1">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img-top" src="#" alt="Card image cap">
+                    <h5 class="card-title">Sample Quiz Softcopy (40 pages)</h5>
+                    <p class="card-text">₹<span>59</span></p>
+                    <button class="btn minus disabled"> - </button>
+                    <span class="quantity">0</span>
+                    <button class="btn plus"> + </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-1">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img-top" src="#" alt="Card image cap">
+                    <h5 class="card-title">Sample Quiz Hardcopy (40 Pages)</h5>
+                    <p class="card-text">₹<span>79</span></p>
+                    <button href="#" class="btn minus disabled"> - </button>
+                    <span class="quantity">0</span>
+                    <button href="#" class="btn plus"> + </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-1">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img-top" src="#" alt="Card image cap">
+                    <h5 class="card-title">Just Plain Black Shirt</h5>
+                    <p class="card-text">₹<span>69</span></p>
+                    <button href="#" class="btn minus disabled"> - </button>
+                    <span class="quantity">0</span>
+                    <button href="#" class="btn plus"> + </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-1">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img-top" src="#" alt="Card image cap">
+                    <h5 class="card-title">Cheat Skill (Randomised)</h5>
+                    <p class="card-text">₹<span>169</span></p>
+                    <button href="#" class="btn minus disabled"> - </button>
+                    <span class="quantity">0</span>
+                    <button href="#" class="btn plus"> + </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Merch Selection End -->
+    <!-- Billing Start -->
+    <h2 id="bill-title">BILLING</h2>
+    <div class="row justify-content-center versaquest-row" id="checkout">
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Billing address</h4>
+            <form class="needs-validation" novalidate="">
+                <div class="row versaquest-row">
+                <div class="col-md-4 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                    Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="middleName">Middle name</label>
+                    <input type="text" class="form-control" id="middleName">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                    Valid last name is required.
+                    </div>
+                </div>
+                </div>
+                <div class="mb-3">
+                <label for="username">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                    <div class="invalid-feedback" style="width: 100%;">
+                    Your username is required.
+                    </div>
+                </div>
+                </div>
+                <div class="mb-3">
+                <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                </div>
+                </div>
+                <div class="mb-3">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Jagmohan Nagar, Jagamara" required>
+                <div class="invalid-feedback">
+                    Please enter your shipping address.
+                </div>
+                </div>
+                <div class="mb-3">
+                <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Khandagiri, Bhubaneswar">
+                </div>
+                <div class="row versaquest-row">
+                <div class="col-md-5 mb-3">
+                    <label for="country">Country</label>
+                    <select class="custom-select d-block w-100 form-control" id="country" required="">
+                        <option value="">Choose...</option>
+                        <option value="india">India</option>
+                        <option value="south-sudan">South Sudan</option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Please select a valid country.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="state">State</label>
+                    <select class="custom-select d-block w-100 form-control" id="state" required="">
+                        <option value="">Choose...</option>
+                        
+                        <option value="andaman-nicobar-islands" class="india andaman-nicobar-islands">Andaman Nicobar Islands</option>
+                        <option value="andhra-pradesh" class="india andhra-pradesh">Andhra Pradesh</option>
+                        <option value="arunachal-pradesh" class="india arunachal-pradesh">Arunachal Pradesh</option>
+                        <option value="assam" class="india assam">Assam</option>
+                        <option value="bihar" class="india bihar">Bihar</option>
+                        <option value="chandigarh" class="india chandigarh">Chandigarh</option>
+                        <option value="chhattisgarh" class="india chhattisgarh">Chhattisgarh</option>
+                        <option value="dadra-and-nagar-haveli" class="india dadra-and-nagar-haveli">Dadra and Nagar Haveli</option>
+                        <option value="daman-and-diu" class="india daman-and-diu">Daman and Diu</option>
+                        <option value="delhi" class="india delhi">Delhi</option>
+                        <option value="goa" class="india goa">Goa</option>
+                        <option value="gujarat" class="india gujarat">Gujarat</option>
+                        <option value="haryana" class="india haryana">Haryana</option>
+                        <option value="himachal-pradesh" class="india himachal-pradesh">Himachal Pradesh</option>
+                        <option value="jammu-and-kashmir" class="india jammu-and-kashmir">Jammu and Kashmir</option>
+                        <option value="jharkhand" class="india jharkhand">Jharkhand</option>
+                        <option value="karnataka" class="india karnataka">Karnataka</option>
+                        <option value="kerala" class="india kerala">Kerala</option>
+                        <option value="ladakh" class="india ladakh">Ladakh</option>
+                        <option value="lakshadweep" class="india lakshadweep">Lakshadweep</option>
+                        <option value="madhya-pradesh" class="india madhya-pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra" class="india maharashtra">Maharashtra</option>
+                        <option value="manipur" class="india manipur">Manipur</option>
+                        <option value="meghalaya" class="india meghalaya">Meghalaya</option>
+                        <option value="mizoram" class="india mizoram">Mizoram</option>
+                        <option value="nagaland" class="india nagaland">Nagaland</option>
+                        <option value="odisha" class="india odisha">Odisha</option>
+                        <option value="puducherry" class="india puducherry">Puducherry</option>
+                        <option value="punjab" class="india punjab">Punjab</option>
+                        <option value="rajasthan" class="india rajasthan">Rajasthan</option>
+                        <option value="sikkim" class="india sikkim">Sikkim</option>
+                        <option value="tamil-nadu" class="india tamil-nadu">Tamil Nadu</option>
+                        <option value="telangana" class="india telangana">Telangana</option>
+                        <option value="tripura" class="india tripura">Tripura</option>
+                        <option value="uttar-pradesh" class="india uttar-pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand" class="india uttarakhand">Uttarakhand</option>
+                        <option value="west-bengal" class="india west-bengal">West Bengal</option>
+                        
+                        <option value="northern-bahr-el-ghazal" class="south-sudan northern-bahr-el-ghazal">Northern Bahr El Ghazal</option>
+                        <option value="western-bahr-el-ghazal" class="south-sudan western-bahr-el-ghazal">Western Bahr El Ghazal</option>
+                        <option value="lakes" class="south-sudan lakes">Lakes</option>
+                        <option value="warrap" class="south-sudan warrap">Warrap</option>
+                        <option value="western-equatoria" class="south-sudan western-equatoria">Western Equatoria</option>
+                        <option value="central-equatoria" class="south-sudan central-equatoria">Central Equatoria</option>
+                        <option value="eastern-equatoria" class="south-sudan eastern-equatoria">Eastern Equatoria</option>
+                        <option value="jonglei" class="south-sudan jonglei">Jonglei</option>
+                        <option value="unity" class="south-sudan unity">Unity</option>
+                        <option value="upper-nile" class="south-sudan upper-nile">Upper Nile</option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="zip">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required="">
+                    <div class="invalid-feedback">
+                    Zip code required.
+                    </div>
+                </div>
+                </div>
+                <hr class="mb-4">
+                <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="same-address">
+                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="save-info">
+                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                </div>
+                <hr class="mb-4">
+
+                <div id="payment-total" style="display: inline; padding: 15px; border: 2px solid indianred; border-radius: 5px; align-items: center; text-align: center;">Total Payment (INR) - ₹<span id="payment-display">0</span></div>
+
+                <h4 class="mb-3 mt-5" id="payment-title">Payment</h4>
+                <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input check" checked="" required="">
+                    <label class="custom-control-label" for="credit">Credit card</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input check " required="">
+                    <label class="custom-control-label" for="debit">Debit card</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="upi" name="paymentMethod" type="radio" class="custom-control-input check" required="">
+                    <label class="custom-control-label" for="upi">UPI</label>
+                </div>
+                </div>
+                <div class="row versaquest-row">
+                <div class="col-md-6 mb-3">
+                    <label for="cc-name">Name</label>
+                    <input type="text" class="form-control" id="cc-name" required>
+                    <div class="invalid-feedback">
+                    Name is required
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="cc-number">Card Number</label>
+                    <input type="tel" inputmode="numeric" pattern="\d*" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required class="form-control" id="cc-number">
+                    <div class="invalid-feedback">
+                    Card Number is required
+                    </div>
+                </div>
+                </div>
+                <div class="row versaquest-row">
+                <div class="col-md-3 mb-3">
+                    <label for="cc-expiration">Expiration</label>
+                    <input type="text" type="tel" pattern="\d*" maxlength="7" placeholder="MM / YY" class="form-control" id="cc-expiration" required>
+                    <div class="invalid-feedback">
+                    Expiration Date required
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="cc-expiration">CVV</label>
+                    <input type="text" type="tel" pattern="\d*" maxlength="4" placeholder="CVC" class="form-control" id="cc-cvv" required>
+                    <div class="invalid-feedback">
+                    Security Code required
+                    </div>
+                </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-lg btn-block" type="submit" id="checkout-button">Continue to checkout</button>
+            </form>
+        </div>
+    </div>    
+
+    <!-- Footer Start -->
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 versaquest-row">
+        <div class="col mb-3">
+            <a href="index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <img src="logo/VersaQuest-Logo-BG.png" alt="" width="300" height="65">
+            </a>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3">
+            <h5>RESOURCES</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hovers">Learn</a></li>
+                <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-muted hovers">Shop</a></li>
+            </ul>
+        </div>
+    
+        <div class="col mb-3">
+            <h5>FOLLOW US</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://linkedin.com/in/shibamnath/" class="nav-link p-0 text-muted hovers">LinkedIn</a></li>
+                <li class="nav-item mb-2"><a href="https://github.com/DarkAngelu" class="nav-link p-0 text-muted hovers">Github</a></li>
+            </ul>
+        </div>
+    
+        <div class="col mb-3">
+            <h5>LEGAL</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted hovers">Policy</a></li>
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted hovers">T & C</a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4" id="credit">
+            <span style="margin-left: 20px;">
+                Developed with 🤎 by
+                <ul class="navbar navbar-expand-md">
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/sayandeep-banerjee-b9854a256/    " target="_blank">Sayandeep Banerjee</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/arya-pandey-08042228b/" target="_blank">Arya Pandey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/syamantak-nandi-51bb8b259/" target="_blank">Syamantak Nandi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/shibamnath" target="_blank">Shibam Nath</a></li>
+                </ul>
+            </span>
+            
+        </div>
+    </footer>
+    <!-- CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

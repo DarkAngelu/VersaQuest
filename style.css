@@ -1,0 +1,752 @@
+body {
+    background-color: black;
+    color: white;
+}
+.form-control:focus {
+    border-color: indianred;
+    box-shadow: inset 0 1px 1px #f0a4a4, 0 0 8px indianred;
+}
+.row {
+    width: 97%;
+}
+/* Nav Start */
+nav {
+    background-color: black;
+    padding: 1rem;
+    border-bottom: 3px solid indianred;
+}
+li, ul div {
+    margin: 20px;
+}
+ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link {
+    font-size: 20px;
+}
+.hovers {
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+}
+.hovers:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.2s linear;
+}
+.hovers:hover:before{
+    width: 100%;
+}
+.fillup { 
+    padding: 10px 25px !important;
+    border-radius: 5px;
+    border: 2px solid indianred;
+
+    display: inline-block;
+    background: linear-gradient(to right, indianred 0%, indianred 50%, black 50%, black 100%);
+    background-size: 200%;
+    background-position: 100% 0;
+    transition: 0.3s background-position;
+}
+.fillup:hover {
+    background-position: 0 0;
+}
+.fillup-active {
+    padding: 10px 25px !important;
+    border-radius: 5px;
+    border: 2px solid #f0a4a4;
+    color: #faf0f6 !important;
+    background-color: indianred;
+}
+.dropdown-menu {
+    background-color: black;
+}
+.light-font {
+    color: #faf0f6;
+}
+.border-active {
+    border-bottom: 2px solid indianred;
+}
+.dropdown {
+    text-align: center;
+}
+.dropdown-item:hover {
+    background-color: #f0a4a4;
+}
+.dropdown-active {
+    background-color: #ffe2e2;
+    color: #4e4149;
+}
+/* Nav End */
+/* Footer Start */
+#credit {
+    border-top: 1px solid indianred;
+    border-left: 1px solid indianred;
+}
+#credit ul {
+    list-style-type: none;
+}
+div > h5 {
+    text-align: center;
+}
+#credit ul > li > a {
+    color: indianred;
+}
+#credit ul > li > a:hover {
+    color: #840611;
+}
+/* Footer End */
+
+
+
+
+
+/* Main Page Start */
+
+.promotion {
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 112px;
+}
+.slogan-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid indianred;
+}
+.slogan {
+    text-align: center;
+    font-size: 8vh;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+#quiz-title {
+    text-align: center;
+    font-size: 80px;
+}
+.tagline {
+    font-size: 2.5vh;
+}
+.slogan > div:nth-child(2) {
+    color: indianred;
+}
+
+.tagline {
+    text-align: center;
+    
+}
+.tagline span {
+    background-color: indianred;
+    border-radius: 5px;
+    padding: 5px 10px 6px 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .slogan > div, .tagline > div > span {
+        font-size: 80%;
+    }
+    .slogan {
+        padding: 16px;
+    }
+    .promotion {
+        padding-bottom: 32px;
+    }
+    .slogan, .promotion {
+        margin-bottom: 24px;
+    }
+    #quiz-title {
+        font-size: 64px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slogan > div, .tagline > div > span {
+        font-size: 60%;
+    }
+    .slogan {
+        padding: 12px;
+    }
+    .promotion {
+        padding-bottom: 24px;
+    }
+    .slogan, .promotion {
+        margin-bottom: 18px;
+    }
+    #quiz-title {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .slogan > div, .tagline > div > span {
+        font-size: 40%;
+    }
+    .slogan {
+        padding: 4.8px;
+    }
+    .promotion {
+        padding-bottom: 9.6px;
+    }
+    .slogan, .promotion {
+        margin-bottom: 12px;
+    }
+    #quiz-title {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .slogan > div, .tagline > div > span {
+        font-size: 35%;
+    }
+    .slogan {
+        padding: 4.2px;
+    }
+    .promotion {
+        padding-bottom: 8.4px;
+    }
+    .slogan, .promotion {
+        margin-bottom: 10.5px;
+    }
+    #quiz-title {
+        font-size:28px;
+    }
+}
+/* Page Break Start */
+#breakpoint {
+    background-color: indianred;
+    border-top: 2px solid #ffe2e2;
+    border-bottom: 2px solid #ffe2e2;
+}
+.stat {
+    text-align: center;
+}
+.stat > span:nth-child(1) {
+    font-size: 3.75rem;
+}
+.stat > span:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+@media screen and (min-width: 992px) {
+    .dummy {
+        display: block;
+    }
+}
+@media screen and (max-width: 991px) {
+    .dummy {
+        display: none;
+    }
+}
+/* Page Break End */
+
+/* Quiz Card Start */
+#quiz-title {
+    margin-bottom: 40px;
+}
+.versaquest-row {
+    align-items: center;
+    width: 101%;
+    margin-bottom: 30px;
+    border-bottom: 3px solid indianred;
+}
+#quiz-row > div {
+    margin-bottom: 20px;
+}
+.card {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    border: 3px solid rgb(57, 57, 57);
+}
+.card:hover {
+    border: 3px solid indianred;
+    transition: linear 0.3s;
+}
+@media screen and (max-width: 1024px) {
+    #quiz-row {
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #quiz-row {
+        margin-bottom: 18px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #quiz-row {
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #quiz-row {
+        margin-bottom: 10.5px;
+    }
+}
+.quiz-btn {
+    background-color: indianred;
+    color: #ffe2e2
+}
+.quiz-btn:hover {
+    background-color: #840611;
+    color: #faf0f6;
+}
+/* Quiz Card End */
+/* Main Page End */
+
+/* About Page Start */
+#carouselExampleControls {
+    margin-top: 112px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 100px;
+  color: indianred;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 100px;
+  color: #840611;
+}
+/* About Page End */
+
+/* Shop Page Start */
+#merch {
+    padding-bottom: 20px;
+}
+#merch-title {
+    margin-top: 140px;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.quantity {
+    margin: 0 20px;
+}
+.plus, .minus {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #faf0f6;
+}
+.plus:hover, .minus:hover {
+    color: #ffe2e2;
+}
+.minus {
+    background-color: #f0a4a4;
+}
+.minus:hover {
+    background-color: #d58181;
+}
+.plus {
+    background-color: indianred;
+}
+.plus:hover {
+    background-color: #840611;
+}
+#bill-title {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 1024px) {
+    #bill-title, #merch-title {
+        font-size: 64px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #bill-title, #merch-title {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #bill-title, #merch-title {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #bill-title, #merch-title {
+        font-size: 28px;
+    }
+}
+#checkout {
+    padding-bottom: 20px;
+}
+#checkout-button {
+    background-color: #d58181;
+    color: #faf0f6;
+}
+#checkout-button:hover {
+    background-color: #840611;
+}
+/* Shop Page End */
+
+/* Contact Page Start */
+#contact-title {
+    margin-top: 140px;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#contact-signout {
+    font-size: 50px;
+    text-align: center;
+}
+/* Contact Page End */
+
+/* All Six Quiz Page Start */
+
+.quiz-heading {
+    margin-top: 140px;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.question-content {
+    font-size: 40px;
+    padding: 20px 0px;
+}
+.options {
+    font-size: 20px;
+    margin: 20px 0px 80px 20px;
+}
+.options > div {
+    display: flex;
+    align-items: center;
+}
+.options > div > input {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.segment {
+    padding-left: 40px;
+    margin: 20px 0px 100px 0px;
+}
+.right-box {
+    font-size: 20px;
+    background-color: rgb(156, 222, 56);
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgb(4, 195, 30);
+    border-radius: 5px;
+}
+.wrong-box {
+    font-size: 20px;
+    background-color: rgb(255, 32, 32);
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgb(255, 25, 25);
+    border-radius: 5px;
+}
+.quiz-submit {
+    font-size: 20px;
+    background-color: indianred;
+    color: #faf0f6;
+    padding: 10px 20px;
+    margin: 50px 100px;
+}
+.quiz-submit:hover {
+    background-color: #840611;
+    color: #faf0f6;
+}
+.quiz-score {
+    font-size: 20px;
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px #d58181;
+    border-radius: 35px;
+}
+@media screen and (max-width: 1024px) {
+    .segment {
+        margin-bottom: 80px;
+    }
+    .quiz-heading {
+        font-size: 64px;
+    }
+    .question-content {
+        font-size: 32px;
+    }
+    .options, .quiz-submit, .right-box, .wrong-box, .quiz-score {
+        font-size: 16px;
+    }
+    .quiz-submit {
+        padding: 8px 16px;
+        margin: 40px 80px;
+    }
+    .right-box, .wrong-box, .quiz-score {
+        margin: 16px;
+        padding: 16px;
+    }
+    .options {
+        margin-bottom: 64px;
+    }
+    .options > div > input {
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .segment {
+        margin-bottom: 60px;
+    }
+    .quiz-heading {
+        font-size: 48px;
+    }
+    .question-content {
+        font-size: 24px;
+    }
+    .options, .quiz-submit, .right-box, .wrong-box, .quiz-score  {
+        font-size: 12px;
+    }
+    .quiz-submit {
+        padding: 6px 12px;
+        margin: 30px 60px;
+    }
+    .right-box, .wrong-box, .quiz-score {
+        margin: 12px;
+        padding: 12px;
+    }
+    .options {
+        margin-bottom: 48px;
+    }
+    .options > div > input {
+        height: 18px;
+        width: 18px;
+        margin-right: 6px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .segment {
+        margin-bottom: 40px;
+    }
+    .quiz-heading {
+        font-size: 32px;
+    }
+    .question-content {
+        font-size: 16px;
+    }
+    .options, .quiz-submit, .right-box, .wrong-box, .quiz-score  {
+        font-size: 8px;
+    }
+    .quiz-submit {
+        padding: 4px 8px;
+        margin: 20px 40px;
+    }
+    .right-box, .wrong-box, .quiz-score {
+        margin: 8px;
+        padding: 8px;
+    }
+    .options {
+        margin-bottom: 32px;
+    }
+    .options > div > input {
+        height: 12px;
+        width: 12px;
+        margin-right: 4px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .segment {
+        margin-bottom: 35px;
+    }
+    .quiz-heading {
+        font-size: 28px;
+    }
+    .question-content {
+        font-size: 14px;
+    }
+    .options, .quiz-submit, .right-box, .wrong-box, .quiz-score  {
+        font-size: 7px;
+    }
+    .quiz-submit {
+        padding: 3.5px 7px;
+        margin: 17.5px 35px;
+    }
+    .right-box, .wrong-box, .quiz-score {
+        margin: 7px;
+        padding: 7px;
+    }
+    .options {
+        margin-bottom: 28px;
+    }
+    .options > div > input {
+        height: 10.5px;
+        width: 10.5px;
+        margin-right: 3.5px;
+    }
+}
+/* All Six Quiz Page End */
+/* Signup, Login & Forgot Start */
+#signup-title, #login-title {
+    margin-top: 140px;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: indianred;
+}
+#forgot-title {
+    margin-top: 140px;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: indianred;
+}
+@media screen and (max-width: 1024px) {
+    #signup-title, #login-title {
+        font-size: 64px;
+    }
+    #forgot-title {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #signup-title, #login-title {
+        font-size: 48px;
+    }
+    #forgot-title {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #signup-title, #login-title {
+        font-size: 32px;
+    }
+    #forgot-title {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #signup-title, #login-title {
+        font-size: 28px;
+    }
+    #forgot-title {
+        font-size: 21px;
+    }
+}
+#signup-button, #login-button {
+    background-color: #d58181;
+    color: #faf0f6;
+}
+#signup-button:hover, #login-button:hover {
+    background-color: #840611;
+}
+.redirect {
+    text-align: center;
+}
+.redirect > a {
+    text-decoration: none;
+    color: indianred;
+}
+.redirect > a:hover {
+    color: #840611;
+}
+/* Signup, Login & Forgot End */
+/* Learn Page Start */
+#learn-title {
+    background-color: indianred;
+    padding: 140px 0px 50px 0px;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 0px;
+    text-decoration: underline #ffe2e2 5%;
+    text-underline-offset: 3%;
+}
+.learn-topic-title {
+    padding: 40px 0px;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.learn-row {
+    align-items: center;
+    width: 101%;
+    padding-bottom: 40px;
+    border-bottom: 3px solid indianred;
+}
+.learn-row > div {
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+    #learn-title {
+        font-size: 64px;
+        padding: 140px 0px 40px 0px;
+    }
+    .learn-topic-title {
+        font-size: 48px;
+        padding: 32px 0px;
+        margin-bottom: 32px;
+    }
+    .learn-row > div {
+        margin-bottom: 16px;
+        padding-bottom: 32px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #learn-title {
+        font-size: 48px;
+        padding: 120px 0px 30px 0px;
+    }
+    .learn-topic-title {
+        font-size: 36px;
+        padding: 24px 0px;
+        margin-bottom: 24px;
+    }
+    .learn-row > div {
+        margin-bottom: 12px;
+        padding-bottom: 24px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #learn-title {
+        font-size: 32px;
+        padding: 140px 0px 20px 0px;
+    }
+    .learn-topic-title {
+        font-size: 24px;
+        padding: 16px 0px;
+        margin-bottom: 16px;
+    }
+    .learn-row > div {
+        margin-bottom: 8px;
+        padding-bottom: 16px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #learn-title {
+        font-size: 28px;
+        padding: 140px 0px 17.5px 0px;
+    }
+    .learn-topic-title {
+        font-size: 21px;
+        padding: 14px 0px;
+        margin-bottom: 14px;
+    }
+    .learn-row > div {
+        margin-bottom: 7px;
+        padding-bottom: 14px;
+    }
+}
+/* Learn Page End */
