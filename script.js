@@ -1,4 +1,13 @@
-
+// Splash Screen Start
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".splash").addClass("display-none");
+    }, 2000)
+    setTimeout(function() {
+        $(".splash").remove();
+    }, 3000)
+})
+// Splash Screen End
 // Shop Start
 $(".minus").click(function() {
     if ($(this).hasClass("disabled")) {
